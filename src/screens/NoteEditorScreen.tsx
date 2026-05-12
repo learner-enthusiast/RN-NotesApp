@@ -72,7 +72,7 @@ export const NoteEditorScreen: React.FC<NoteEditorScreenProps> = ({
                 {/* Header with ImageBackground */}
                 <ImageBackground
                     source={{
-                        uri: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+                        uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkrbHkEgKUAyuwHoy97piAKHXayuwYJy00FA&s',
                     }}
                     style={[
                         styles.header,
