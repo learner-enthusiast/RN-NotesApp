@@ -1,65 +1,88 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
-
-import '@/global.css';
-
-import { Platform } from 'react-native';
-
 export const Colors = {
-  light: {
-    text: '#000000',
-    background: '#ffffff',
-    backgroundElement: '#F0F0F3',
-    backgroundSelected: '#E0E1E6',
-    textSecondary: '#60646C',
-  },
-  dark: {
-    text: '#ffffff',
-    background: '#000000',
-    backgroundElement: '#212225',
-    backgroundSelected: '#2E3135',
-    textSecondary: '#B0B4BA',
-  },
-} as const;
-
-export type ThemeColor = keyof typeof Colors.light & keyof typeof Colors.dark;
-
-export const Fonts = Platform.select({
-  ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
-    sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
-    serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
-    rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
-    mono: 'ui-monospace',
-  },
-  default: {
-    sans: 'normal',
-    serif: 'serif',
-    rounded: 'normal',
-    mono: 'monospace',
-  },
-  web: {
-    sans: 'var(--font-display)',
-    serif: 'var(--font-serif)',
-    rounded: 'var(--font-rounded)',
-    mono: 'var(--font-mono)',
-  },
-});
+    light: {
+        primary: '#007AFF',
+        background: '#FFFFFF',
+        surface: '#F5F5F5',
+        surface2: '#EFEFEF',
+        text: '#000000',
+        textSecondary: '#666666',
+        textTertiary: '#999999',
+        border: '#E5E5E5',
+        divider: '#EBEBEB',
+        shadow: '#000000',
+        accent: '#34C759',
+    },
+    dark: {
+        primary: '#0A84FF',
+        background: '#000000',
+        surface: '#1C1C1E',
+        surface2: '#2C2C2E',
+        text: '#FFFFFF',
+        textSecondary: '#B8B8BA',
+        textTertiary: '#8E8E93',
+        border: '#424245',
+        divider: '#545458',
+        shadow: '#000000',
+        accent: '#32D74B',
+    },
+}
 
 export const Spacing = {
-  half: 2,
-  one: 4,
-  two: 8,
-  three: 16,
-  four: 24,
-  five: 32,
-  six: 64,
-} as const;
+    xs: 4,
+    sm: 8,
+    md: 12,
+    lg: 16,
+    xl: 24,
+    xxl: 32,
+}
 
-export const BottomTabInset = Platform.select({ ios: 50, android: 80 }) ?? 0;
-export const MaxContentWidth = 800;
+export const Typography = {
+    h1: {
+        fontSize: 32,
+        fontWeight: '700',
+        lineHeight: 38,
+    },
+    h2: {
+        fontSize: 28,
+        fontWeight: '600',
+        lineHeight: 34,
+    },
+    h3: {
+        fontSize: 24,
+        fontWeight: '600',
+        lineHeight: 30,
+    },
+    body: {
+        fontSize: 16,
+        fontWeight: '400',
+        lineHeight: 22,
+    },
+    bodyBold: {
+        fontSize: 16,
+        fontWeight: '600',
+        lineHeight: 22,
+    },
+    caption: {
+        fontSize: 14,
+        fontWeight: '400',
+        lineHeight: 20,
+    },
+    captionBold: {
+        fontSize: 14,
+        fontWeight: '600',
+        lineHeight: 20,
+    },
+    small: {
+        fontSize: 12,
+        fontWeight: '400',
+        lineHeight: 16,
+    },
+}
+
+export const BorderRadius = {
+    sm: 4,
+    md: 8,
+    lg: 12,
+    xl: 16,
+    full: 999,
+}
