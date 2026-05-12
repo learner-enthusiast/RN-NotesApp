@@ -1,57 +1,153 @@
-# Welcome to your Expo app 👋
+# 📱 Notes App - React Native with Expo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A clean, professional Notes application built with React Native, Expo, and TypeScript. Features a beautiful UI with dark/light theme support, real-time search, and responsive design for phones and tablets.
 
-## Get started
+---
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## 🚀 Quick Start
 
 ```bash
-npm run reset-project
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+
+# Press 'i' for iOS, 'a' for Android, 'w' for web
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-### Other setup steps
+## 📦 React Native Components Used
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+### NotesListScreen
 
-## Learn more
+- **FlatList** - Efficiently render scrollable list of notes
+- **TextInput** - Search/filter notes in real-time
+- **Pressable** - Interactive note cards with visual feedback
+- **Switch** - Dark/light mode toggle
+- **SafeAreaView** - Safe area padding for notch devices
+- **View, Text** - Layout and typography
 
-To learn more about developing your project with Expo, look at the following resources:
+### NoteEditorScreen
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- **KeyboardAvoidingView** - Prevents keyboard overlap (iOS/Android)
+- **ImageBackground** - Header background with visual appeal
+- **Pressable** - Save and Back buttons with press states
+- **TextInput** - Title (single-line) and content (multi-line) inputs
+- **ScrollView** - Scrollable content area
+- **SafeAreaView** - Safe area padding
+- **View, Text** - Layout and typography
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 🎣 React Hooks Used
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# RN-NotesApp
+### Core Hooks
+
+- **useState** - State management for:
+    - Current screen (list/editor)
+    - Selected note for editing
+    - Notes array (create, read, update)
+    - Dark mode toggle state
+    - Search query filtering
+    - Title and content inputs
+
+- **useMemo** - Performance optimization:
+    - Filtered notes based on search query (prevents unnecessary re-filters)
+
+### React Native Hooks
+
+- **useColorScheme()** - Automatic light/dark mode detection based on system preference
+- **useWindowDimensions()** - Responsive layout:
+    - Phone vs tablet detection (breakpoint: 600px width)
+    - Dynamic content width (full-width on phone, 70% on tablet)
+    - Real-time adaptation on orientation change
+
+---
+
+## 🎨 Styling Methods
+
+- **StyleSheet.create()** - All component styles for performance
+- **StyleSheet.compose()** - Combining multiple style objects (NotesListScreen)
+- **StyleSheet.flatten()** - Flattening style arrays (NoteEditorScreen)
+
+---
+
+## ✨ Key Features
+
+**Two screens** - Notes list and note editor
+**Add notes** - Create new notes with unique IDs  
+ **Edit notes** - Update existing note title and content
+**Search/filter** - Real-time search across notes
+**Dark mode** - Automatic or manual theme toggle
+**Responsive** - Optimized for phones and tablets
+**Keyboard handling** - Smooth keyboard interactions
+**TypeScript** - Full type safety throughout
+**Professional UI** - Consistent spacing, typography, and colors
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── _layout.tsx           # Root navigation setup
+│   └── index.tsx             # Entry point
+├── components/
+│   └── AppContainer.tsx      # Screen state management
+├── screens/
+│   ├── NotesListScreen.tsx   # Notes list and search
+│   └── NoteEditorScreen.tsx  # Create/edit notes
+├── constants/
+│   ├── theme.ts              # Colors, spacing, typography
+│   └── mockData.ts           # Sample notes
+└── types/
+    └── index.ts              # TypeScript interfaces
+```
+
+---
+
+## 🛠️ Technologies
+
+- **React Native** - Cross-platform mobile framework
+- **Expo** - Managed React Native platform
+- **TypeScript** - Static type checking
+- **React Hooks** - Functional component state management
+- **StyleSheet API** - Performance-optimized styling
+
+---
+
+## 🎯 Component Hierarchy
+
+```
+AppContainer (state management)
+├── NotesListScreen
+│   ├── Header (title + theme toggle)
+│   ├── Search TextInput
+│   └── FlatList
+│       └── NoteCard (Pressable)
+│
+└── NoteEditorScreen
+    ├── ImageBackground Header
+    │   ├── Back Button (Pressable)
+    │   ├── Title
+    │   └── Save Button (Pressable)
+    ├── Title TextInput
+    ├── Content TextInput (multiline)
+    └── Character Counter
+```
+
+---
+
+## 🎓 Concepts Demonstrated
+
+- React Native core components
+- Mobile UI/UX patterns
+- Responsive design with hooks
+- Theme management
+- State management with hooks
+- TypeScript in React Native
+- Performance optimization
+- Professional styling practices
