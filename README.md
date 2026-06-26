@@ -20,7 +20,7 @@ npm start
 
 ### NotesListScreen
 
-- **FlatList** - Efficiently render scrollable list of notes
+- **FlatList** - Efficiently render sWlable list of noW
 - **TextInput** - Search/filter notes in real-time
 - **Pressable** - Interactive note cards with visual feedback
 - **Switch** - Dark/light mode toggle
