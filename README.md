@@ -4,8 +4,6 @@ A clean, professional Notes application built with React Native, Expo, and TypeS
 
 ---
 
-## 🚀 Quick Start
-
 ```bash
 # Install dependencies
 npm install
@@ -22,7 +20,7 @@ npm start
 
 ### NotesListScreen
 
-- **FlatList** - Efficiently render scrollable list of notes
+- **FlatList** - Efficiently render sWlable list of noW
 - **TextInput** - Search/filter notes in real-time
 - **Pressable** - Interactive note cards with visual feedback
 - **Switch** - Dark/light mode toggle
