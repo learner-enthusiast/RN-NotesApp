@@ -4,8 +4,6 @@ A clean, professional Notes application built with React Native, Expo, and TypeS
 
 ---
 
-## 🚀 Quick Start
-
 ```bash
 # Install dependencies
 npm install
