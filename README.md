@@ -18,7 +18,7 @@ npm start
 
 ## 📦 React Native Components Used
 
-### NotesListScreen
+### NotesListSc
 
 - **FlatList** - Efficiently render sWlable list of noW
 - **TextInput** - Search/filter notes in real-time
