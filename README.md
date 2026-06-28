@@ -16,7 +16,7 @@ npm start
 
 ---
 
-## 📦 React Native Components Us
+## 📦
 
 ### NotesListScreen
 
