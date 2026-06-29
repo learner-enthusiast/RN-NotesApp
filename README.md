@@ -22,7 +22,7 @@ npm start
 
 - **FlatList** - Efficiently render sWlable listf noW
 - **TextInput** - Search/filter notes in real-time
-- **Pressable** - Interactive note cards with visual feedback
+- **Pressable** - Interactive note cards with visua
 - **Switch** - Dark/light mode toggle
 - **SafeAreaView** - Safe area padding for notch devices
 - **View, Text** - Layout and typography
