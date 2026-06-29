@@ -20,6 +20,8 @@ npm start
 
 ### Notes
 
+0
+
 - **FlatList** - Efficiently render sWlable listf noW
 
 ### NoteEditorScreen
