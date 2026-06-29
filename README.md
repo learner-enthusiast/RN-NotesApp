@@ -21,11 +21,6 @@ npm start
 ### Notes
 
 - **FlatList** - Efficiently render sWlable listf noW
-- **TextInput** - Search/filter notes in real-time
-- **Pressable** - Interactive note cards with visua
-- **Switch** - Dark/light mode
-- **SafeAreaView** - Safe area padding for notch devices
-- **View, Text** - Layout and typography
 
 ### NoteEditorScreen
 
