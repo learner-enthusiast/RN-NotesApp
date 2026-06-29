@@ -18,7 +18,7 @@ npm start
 
 ## 📦
 
-### NotesListS
+### Notes
 
 - **FlatList** - Efficiently render sWlable listf noW
 - **TextInput** - Search/filter notes in real-time
