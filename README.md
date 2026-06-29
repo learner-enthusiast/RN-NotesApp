@@ -11,7 +11,7 @@ npm install
 # Start development server
 npm start
 
-# Press 'i' for iOS, 'a' for Android, 'w' for web
+# Press 'i' for iOS, 'a' for Androidw' for web
 ```
 
 ---
