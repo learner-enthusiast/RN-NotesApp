@@ -16,7 +16,7 @@ npm start
 
 ---
 
-## 📦
+##
 
 ### Notes
 
